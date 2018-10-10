@@ -27,8 +27,6 @@ public extension UIView {
 
 // MARK: - External Nib loading
 public extension UIView{
-    
-    //// Methods ////
     class func fromNib() -> Self? {
         return fromNib(nil, on: nil);
     }

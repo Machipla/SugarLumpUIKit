@@ -26,30 +26,18 @@ public extension UIFont{
         return font;
     }
     
-    func copy(trait: UIFontDescriptorSymbolicTraits) -> UIFont? {
+    func copied(with trait:UIFontDescriptorSymbolicTraits) -> UIFont? {
         guard let fontTraitDescriptor = fontDescriptor.withSymbolicTraits(trait) else { return nil }
         
         let finalFont = UIFont(descriptor: fontTraitDescriptor, size: CGFloat(pointSize))
         return finalFont
     }
-    
-    
-    /// Método que copia la fuente, pasando un peso por parámetro.
-    ///
-    /// - Parameter weight: Peso del cual obtener la copia de la fuente. Este comprende los valores que aceptaría la clave UIFontWeightTrait de UIFontDescriptor.
-    /// I.e: UIFontWeightUltraLight, UIFontWeightThin, UIFontWeightMedium...
-    /// Si una fuente no tiene el peso pasado por parámetro, se devolverá una fuente por defecto.
-    /// - Returns: Copia de la fuente con el peso adecuado
-    func copy(weight:CGFloat) -> UIFont {
-        // Este descriptor hace falta dado que [self fontDescriptor] no parece reconocer el cambio de peso en la fuente...
-        let familyFontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptor.AttributeName.family: familyName])
-        let fontTraitDescriptor: UIFontDescriptor = familyFontDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: [UIFontDescriptor.TraitKey.weight: (weight)]])
-        return UIFont(descriptor: fontTraitDescriptor, size: CGFloat(pointSize))
-    }
-    
+
     @available(iOS 8.2, *)
-    func copy(fontWeight: UIFont.Weight) -> UIFont{
-        return copy(weight: fontWeight.rawValue)
+    func copied(with fontWeight:UIFont.Weight) -> UIFont{
+        let familyFontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptor.AttributeName.family: familyName])
+        let fontTraitDescriptor: UIFontDescriptor = familyFontDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: [UIFontDescriptor.TraitKey.weight: (fontWeight.rawValue)]])
+        return UIFont(descriptor: fontTraitDescriptor, size: CGFloat(pointSize))
     }
     
 }
