@@ -1,8 +1,8 @@
 //
 //  Application+Linking.swift
-//  Pods
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 29/6/17.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 //
 

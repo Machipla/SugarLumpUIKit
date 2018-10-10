@@ -1,8 +1,8 @@
 //
 //  ScrollView+Info.swift
-//  Pods
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 31/5/17.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 //
 

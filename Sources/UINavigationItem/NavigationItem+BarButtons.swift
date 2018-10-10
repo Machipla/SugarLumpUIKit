@@ -1,8 +1,8 @@
 //
 //  NavigationItem+BarButtons.swift
-//  SwiftUtilsKit
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 30/5/18.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 
 import Foundation

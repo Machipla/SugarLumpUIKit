@@ -1,8 +1,8 @@
 //
 //  ViewController+Transitions.swift
-//  ADAppRater
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 31/10/17.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 
 import Foundation

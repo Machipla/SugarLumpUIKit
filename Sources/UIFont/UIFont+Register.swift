@@ -1,8 +1,8 @@
 //
 //  UIFont+Register.swift
-//  Alamofire
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 19/6/18.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 
 import Foundation

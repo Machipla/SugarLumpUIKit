@@ -1,6 +1,6 @@
 //
 //  UIImageView+Additions.swift
-//  Alamofire
+//  SugarLumpUIKit
 //
 //  Created by Mario Plaza on 26/9/18.
 //

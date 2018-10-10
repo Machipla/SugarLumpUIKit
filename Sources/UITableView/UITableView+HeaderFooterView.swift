@@ -1,6 +1,6 @@
 //
 //  UITableView+HeaderFooterView.swift
-//  Alamofire
+//  SugarLumpUIKit
 //
 //  Created by Mario Plaza on 7/9/18.
 //

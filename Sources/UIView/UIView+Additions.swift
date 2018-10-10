@@ -1,8 +1,8 @@
 //
 //  UIView+Additions.swift
-//  BoringSSL
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 12/6/18.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 
 import Foundation

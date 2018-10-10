@@ -1,8 +1,8 @@
 //
 //  ViewController+Info.swift
-//  Pods
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 1/6/17.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 //
 

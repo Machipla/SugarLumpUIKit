@@ -1,8 +1,8 @@
 //
 //  UIFont+Creation.swift
-//  Pods
+//  SugarLumpUIKit
 //
-//  Created by Mario Chinchilla on 3/4/17.
+//  Created by Mario Chinchilla on 10/10/18.
 //
 //
 
