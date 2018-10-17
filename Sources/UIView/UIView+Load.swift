@@ -11,17 +11,21 @@ import SugarLumpFoundation
 
 // MARK: - Nib info
 public extension UIView {
-     class var nibName: String {
+    class var nibName: String {
         return "\(self)".components(separatedBy: ".").first ?? ""
     }
     
-     class var nib: UINib? {
+    class var nib: UINib? {
         let bundle = Bundle(for: self)
         if let _ = bundle.path(forResource: nibName, ofType: "nib") {
             return UINib(nibName: nibName, bundle: bundle)
         } else {
             return nil
         }
+    }
+    
+    class var bundle:Bundle? {
+        return Bundle(for: self)
     }
 }
 
@@ -41,7 +45,7 @@ public extension UIView{
     
     class func fromNib(_ nibName:String?,on bundle:Bundle?) -> Self?{
         let name = nibName != nil ? nibName! : self.nibName
-        let loadingBundle = bundle != nil ? bundle! : Bundle.main
+        let loadingBundle = bundle != nil ? bundle! : self.bundle
         let nib = UINib(nibName: name, bundle: loadingBundle)
         let nibViews = nib.instantiate(withOwner: nil, options: nil)
         
