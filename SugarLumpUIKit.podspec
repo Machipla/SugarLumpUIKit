@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name          = 'SugarLumpUIKit'
   spec.homepage      = "https://github.com/Machipla/SugarLumpUIKit"
-  spec.version       = '0.0.5'
+  spec.version       = '0.0.6'
   spec.platform      = :ios, "9.0"
   spec.authors       = 'Mario Chinchilla'
   spec.summary       = 'The UIKit module of SugarLump pod'

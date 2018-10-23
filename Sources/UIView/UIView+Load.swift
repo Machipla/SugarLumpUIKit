@@ -11,6 +11,10 @@ import SugarLumpFoundation
 
 // MARK: - Nib info
 public extension UIView {
+    class var reuseID:String{
+        return "\(self)ID"
+    }
+    
     class var nibName: String {
         return "\(self)".components(separatedBy: ".").first ?? ""
     }
